@@ -39,7 +39,7 @@ export default class Create extends Component{
           business_gst_number: this.state.business_gst_number
         };
         alert("sample");
-        axios.post('http://localhost:4000/business/add', obj)
+        axios.post('http://localhost:4000/todos/add', obj)
             .then(res => console.log(res.data))
             .catch(error => {
             console.log(error.message);
